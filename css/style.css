@@ -62,6 +62,71 @@ body {
 }
 
 /***************************/
+/* HEADER SECTION */
+/***************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  border-bottom: solid 1px #ffadc9;
+}
+
+.header-links {
+  text-decoration: none;
+}
+
+.heading-först {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  color: #ff3378;
+  animation-name: myAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.heading-tredje {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #ff3378;
+  animation-name: myAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  animation-name: myAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.social-link:link,
+.social-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #ff3378;
+  transition: all 0.3s;
+}
+
+.social-link:hover,
+.social-link:active {
+  color: #555;
+}
+
+/***************************/
 /* HERO SECTION */
 /***************************/
 
@@ -81,9 +146,10 @@ body {
 
 .film-img {
   width: 100%;
+  border-radius: 15px;
 }
 
-.heading-första {
+.heading-andra {
   font-size: 5.2rem;
   font-weight: 700;
   line-height: 1.05;
@@ -100,9 +166,7 @@ body {
 
 .filmer-serier {
   max-width: 80rem;
-  margin: 0 auto 12.8rem;
-  display: flex;
-  justify-content: center;
+  margin: 9.6rem auto 3.2rem;
 }
 
 .imdb {
@@ -112,11 +176,11 @@ body {
 }
 
 /***************************/
-/* Tabell Section */
+/* TABELL SECTION */
 /***************************/
 
 .tabeller {
-  padding: 4.8rem 0 6.4rem 0;
+  padding: 8rem 0 3.2rem 0;
 }
 
 .container {
@@ -134,6 +198,7 @@ body {
 
 .img-box {
   width: 100%;
+  border-radius: 15px;
 }
 
 tbody tr:nth-child(odd) {
@@ -169,4 +234,132 @@ tr {
   font-size: 2rem;
   line-height: 1.6;
   color: #333;
+  margin-bottom: 4.8rem;
 }
+
+.media {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  border-top: solid 1px #ff3378;
+}
+
+.media.last {
+  margin-bottom: 12.8rem;
+}
+
+.trailern:link,
+.trailern:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #ff3378;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  border-top-width: 1px;
+}
+
+.trailern:hover,
+.trailern:active {
+  text-decoration: underline;
+}
+
+.hyr-köp:link,
+.hyr-köp:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #ff3378;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.hyr-köp:hover,
+.hyr-köp:active {
+  text-decoration: underline;
+}
+
+.trailern {
+  padding-top: 2.4rem;
+}
+
+.hyr-köp {
+  padding-bottom: 2.4rem;
+}
+
+/***************************/
+/* FOOTER SECTION */
+/***************************/
+
+.footer {
+  padding: 6.4rem 0 8rem;
+  border-top: 1px solid #ffadc9;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #555;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  text-decoration: underline;
+  color: #ff3378;
+}
+
+.social-link:link,
+.social-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #ff3378;
+  transition: all 0.3s;
+}
+
+/***************************/
+/* KEY FRAMES */
+/***************************/
+
+@keyframes myAnimation {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
